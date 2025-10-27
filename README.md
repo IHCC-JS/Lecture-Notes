@@ -1,0 +1,3 @@
+# Lecture Notes
+
+This repositry 
