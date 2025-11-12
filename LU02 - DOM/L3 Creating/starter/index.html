@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSD Class Info</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="fillPage.js" defer type="module"></script>
+    <script src="HandleUserForm.js" defer type="module"></script>
+</head>
+<body class="min-h-screen bg-gray-900 text-gray-100 flex items-center justify-center">
+<main class="bg-gray-800 p-8 rounded-2xl shadow-xl w-96 text-center space-y-6">
+    <h1 class="text-2xl font-bold text-blue-400">Software Development Classes</h1>
+    <div>
+        <label for="classSelect" class="block text-sm mb-2 text-gray-300">Select Your Class:</label>
+        <select id="classSelect" class="w-full bg-gray-700 text-white p-2 rounded">
+            <option value="">-- Choose a Class --</option>
+            <!-- Filled with JS-->
+        </select>
+    </div>
+    <button id="submitBtn" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition">
+        Submit
+    </button>
+
+    <div id="output" class="mt-4 text-lg text-green-400"></div>
+</main>
+</body>
+</html>
