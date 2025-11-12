@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Prompts</title>
+    </head>
+    <body>
+        <h1>
+            <a
+                href="https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt"
+                >Prompt()</a
+            >
+        </h1>
+        <p>
+            This is an example of using Prompt(). You can't see this page
+            until the Script is complete
+        </p>
+        <script>
+            let name = prompt("Enter your name", "name goes here");
+            console.log(name);
+
+            alert("Welcome " + name + "!");
+
+            const agree = confirm("You entered" + name  + " ?")
+
+            if (!agree) {
+                alert("oh no! Something went wrong??");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>If and Switch</title>
+</head>
+<body>
+<h1>If and Switch</h1>
+<p>Check Console</p>
+<script>
+    let num = 3;
+    if (num > 0) {
+        console.log(`${num} is a positive number`);
+    }
+    //  3 is a positive number, if you change `num` to a negative number, nothing will print
+
+    let isRaining = true;
+    //remove ==true for cleaner code.
+    if (isRaining == true) {
+        console.log("Remember to take your rain coat.");
+    }
+    
+    
+    //example of why we need to use ===
+    if ("5" == 5) {
+        console.log("== compares only value: '5' equals 5");
+    }
+    if (!("5" === 5)) {
+        console.log("=== compares value and type: string '5' not equals number 5");
+    }
+
+
+    //write the same code again, but with an "else" you can go up
+    //and edit code above given code below
+    let numTwo = 3;
+    if (num > 0) {
+        console.log(`${numTwo} is a positive number`);
+    } else {
+        console.log(`${numTwo} is a negative number`);
+    }
+    let isRainingTwo = false;
+    if (isRainingTwo) {
+        console.log("You need a rain coat.");
+    } else {
+        console.log("No need for a rain coat.");
+    }
+
+    //this is a `if elseif else`. If you find yourself build one of these,
+    //you might want to thank about building a switch
+    let a = -2;
+    if (a > 0) {
+        console.log(`${a} is a positive number`);
+    } else if (a < 0) {
+        console.log(`${a} is a negative number`);
+    } else if (a == 0) {
+        console.log(`${a} is zero`);
+    } else {
+        console.log(`${a} is not a number`);
+    }
+    //another example skip if needed
+    //best practice to use ===
+    let weather = "rainy";
+    if (weather === "rainy") {
+        console.log("You need a rain coat.");
+    } else if (weather === "cloudy") {
+        console.log("It might be cold, you need a jacket.");
+    } else if (weather === "sunny") {
+        console.log("Go out freely.");
+    } else {
+        console.log("No need for rain coat.");
+    }
+
+    // Switch More Examples
+    //This is an alternative to a `if else if else else`.
+    let dayUserInput = prompt("What day is today ?");
+    let day = dayUserInput.toLowerCase();
+
+    switch (day) {
+        case "monday":
+            console.log("Today is Monday");
+            break;
+        case "tuesday":
+            console.log("Today is Tuesday");
+            break;
+        case "wednesday":
+            console.log("Today is Wednesday");
+            break;
+        case "thursday":
+            console.log("Today is Thursday");
+            break;
+        case "friday":
+            console.log("Today is Friday");
+            break;
+        case "saturday":
+            console.log("Today is Saturday");
+            break;
+        case "sunday":
+            console.log("Today is Sunday");
+            break;
+        default:
+            console.log("It is not a week day.");
+    }
+
+    let numThree = prompt("Enter number");
+    switch (true) {
+        case numThree > 0:
+            console.log("Number is positive");
+            break;
+        case numThree == 0:
+            console.log("Numbers is zero");
+            break;
+        case numThree < 0:
+            console.log("Number is negative");
+            break;
+        default:
+            console.log("Entered value was not a number");
+    }
+
+    //just thought I would show you these, we will use them later
+    let isRainingThree = true;
+    isRainingThree
+        ? console.log("You need a rain coat.")
+        : console.log("No need for a rain coat.");
+</script>
+</body>
+</html>
