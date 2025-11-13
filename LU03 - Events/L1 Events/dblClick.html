@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>CLick the dot Example</title>
+    <style>
+        #game-container {
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+        }
+
+        #target {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+<div id="game-container">
+    <div id="target"></div>
+</div>
+<script>
+    const target = document.getElementById("target");
+    let score = 0;
+
+    const moveTarget = () => {
+        //Random number based on the size of the game container - the size of the target
+        const newLeft = Math.floor(Math.random() * 350);
+        const newTop = Math.floor(Math.random() * 350);
+
+        target.style.left = `${newLeft}px`;
+        target.style.top = `${newTop}px`;
+    };
+
+    target.addEventListener("dblclick", () => {
+        console.log(`Score: ${(score += 10)}`);
+        moveTarget();
+    });
+
+    moveTarget();
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Code Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen m-0 p-4">
+
+<div class="container text-center w-full max-w-2xl">
+
+    <!-- Only shows up until the user presses a button-->
+    <div id="instruction"
+         class="p-6 text-2xl font-bold text-gray-700 bg-white border-2 border-gray-300 rounded-lg shadow-md transition-all duration-300 ease-in-out">
+        Press any key on your keyboard to see the details
+    </div>
+
+    <div id="key-info" class="hidden flex-col items-center gap-5">
+        <div id="code-display"
+             class="bg-blue-600 text-white text-7xl font-bold pt-16 pb-10 px-16 rounded-xl shadow-xl min-w-[200px] mb-4 relative">
+            <span class="absolute top-4 text-sm font-normal text-white/80">event.code</span>
+        </div>
+        <div id="code-details" class="flex flex-wrap justify-center gap-4">
+            <div class="detail-box bg-white border border-gray-200 rounded-lg p-4 shadow-sm min-w-[150px] flex-grow">
+                <p class="label m-0 mb-1 text-sm text-gray-500 uppercase">event.key</p>
+                <p class="value m-0 text-3xl font-bold text-gray-800 break-words" id="key-value">...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event
+    document.addEventListener('keydown', (e) => {
+        console.log(e);
+
+        const instruction = document.getElementById('instruction');
+        const keyInfo = document.getElementById('key-info');
+        const codeDisplay = document.getElementById('code-display');
+        const keyValue = document.getElementById('key-value');
+
+        // hide the instruction and show the key info
+        instruction.classList.add('hidden');
+        keyInfo.classList.remove('hidden');
+
+
+        codeDisplay.textContent = e.code;
+        keyValue.textContent = e.key;
+    });
+</script>
+
+</body>
+</html>

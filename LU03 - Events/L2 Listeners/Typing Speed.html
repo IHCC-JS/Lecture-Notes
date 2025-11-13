@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen">
+
+<div class="p-6 rounded-xl border-t-4 border-gray-300 bg-white shadow-lg w-full max-w-xl">
+
+    <h1 class="text-2xl font-bold text-gray-800 mb-4 text-center">
+        Typing Game
+    </h1>
+
+    <div class="p-3 mb-4 rounded bg-gray-100 font-mono text-lg text-gray-800" id="target-text-container">
+        <!-- target placed by JS on load -->
+    </div>
+
+    <textarea
+            id="input-area"
+            placeholder="Start typing here to begin the timer..."
+            rows="3"
+            class="w-full p-3 text-lg font-mono border-2 border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 transition resize-none"
+    ></textarea>
+
+    <div id="result" class="mt-4 p-3 bg-gray-200 text-gray-700 text-center font-medium rounded">
+        Waiting for input...
+    </div>
+
+    <button id="restart-button"
+            class="mt-4 w-full py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600 transition">
+        Restart
+    </button>
+
+</div>
+
+<script>
+    let startTime = 0;
+    let isGameStarted = false;
+
+    const targetText = "JavaScript is the Best";
+    const hardcodedWordCount = 4;
+
+    const targetDiv = document.getElementById('target-text-container');
+    const inputArea = document.getElementById('input-area');
+    const resultDiv = document.getElementById('result');
+    const restartButton = document.getElementById('restart-button');
+
+    targetDiv.textContent = targetText;
+
+    inputArea.addEventListener('input', (e) => {
+        const typedText = e.target.value;
+
+        // start the timer only on the first key
+        if (!isGameStarted) {
+            startTime = new Date().getTime();
+            isGameStarted = true;
+            resultDiv.textContent = 'Timer started. Keep typing!';
+        }
+
+        // win condition
+        if (typedText === targetText) {
+            if (isGameStarted) {
+                const endTime = new Date().getTime();
+                const timeTakenSeconds = (endTime - startTime) / 1000;
+
+                const timeTakenMinutes = timeTakenSeconds / 60;
+                const wpm = Math.round(hardcodedWordCount / timeTakenMinutes);
+
+                resultDiv.textContent = 'COMPLETED! WPM: ' + wpm + ' (' + timeTakenSeconds.toFixed(1) + 's)';
+                isGameStarted = false;
+            }
+        }
+    });
+
+    restartButton.addEventListener('click', () => {
+        // reset state
+        isGameStarted = false;
+        startTime = 0;
+
+        // reset DOM elements
+        inputArea.value = '';
+        resultDiv.textContent = 'Waiting for input...';
+    });
+</script>
+</body>
+</html>
