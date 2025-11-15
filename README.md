@@ -1,8 +1,10 @@
 # Lecture Notes
 
+[//]: # (TODO add screenshots of the completed examples for each lecture)
+
 This repository holds in class examples and starting code for each lecture.
 Some lectures include all the notes some are just a starting point (some HTML and images).
-Often in class I will ask you to get some code from here and use it during our lecture. 
+Often in class I will ask you to get some code from here and use it during our lecture.
 
 If you do fork this repository, make sure you keep your fork up to date.
 

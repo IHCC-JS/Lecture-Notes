@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Library - Book Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-amber-50 min-h-screen">
+<header class="bg-amber-900 text-amber-50 shadow-lg">
+    <div class="container mx-auto px-6 py-8">
+        <h1 class="text-4xl font-bold text-center mb-2">Ottumwa Public Library</h1>
+        <p class="text-center text-amber-200">
+            The Ottumwa Public Library strives to provide wide-ranging opportunities,
+            space, services, and resources for all members of the community to expand their knowledge, increase
+            understanding and gain perspective about our diverse and amazing world.
+        </p>
+    </div>
+</header>
+<main class="container mx-auto px-6 py-12">
+    <img src="assets/library-logo.png" alt="Book Club" class="w-full object-contain mb-8">
+    <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-xl p-8 border-4 border-amber-800">
+        <h2 class="text-3xl font-bold text-amber-900 mb-6 text-center border-b-2 border-amber-300 pb-4">
+            Book Club Sign Up
+        </h2>
+
+        <form class="space-y-6">
+            <div>
+                <label for="name" class="block text-lg font-semibold text-amber-900 mb-2">
+                    Full Name:
+                </label>
+                <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        class="w-full px-4 py-3 border-2 border-amber-300 rounded-lg focus:outline-none focus:border-amber-600 focus:ring-2 focus:ring-amber-200 transition"
+                        placeholder="Enter your full name"
+                >
+            </div>
+            <div>
+                <label for="email" class="block text-lg font-semibold text-amber-900 mb-2">
+                    Email Address:
+                </label>
+                <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        class="w-full px-4 py-3 border-2 border-amber-300 rounded-lg focus:outline-none focus:border-amber-600 focus:ring-2 focus:ring-amber-200 transition"
+                        placeholder="your.email@example.com"
+                >
+            </div>
+            <div>
+                <label for="book" class="block text-lg font-semibold text-amber-900 mb-2">
+                    Select Book:
+                </label>
+                <select
+                        name="book"
+                        id="book"
+                        required
+                        class="w-full px-4 py-3 border-2 border-amber-300 rounded-lg focus:outline-none focus:border-amber-600 focus:ring-2 focus:ring-amber-200 transition bg-white cursor-pointer"
+                >
+                    <option value="" disabled selected>📖 Select a Book</option>
+                    <option value="The Invisible Man">The Invisible Man - H.G. Wells</option>
+                    <option value="Dune">Dune - Frank Herbert</option>
+                    <option value="The Call of the Wild">The Call of the Wild - Jack London</option>
+                </select>
+            </div>
+            <div class="pt-4">
+                <input
+                        type="submit"
+                        value="Check Out Book"
+                        class="w-full bg-amber-800 hover:bg-amber-900 text-white font-bold py-4 px-6 rounded-lg cursor-pointer transition duration-200 transform hover:scale-105 shadow-lg text-lg"
+                >
+            </div>
+            <div id="book-display" class="mt-6">
+                <div class="bg-amber-100 border-2 border-amber-400 rounded-lg p-6 shadow-lg mt-4">
+                    <h3 class="text-2xl font-bold text-amber-900 mb-4 flex items-center">
+                        📖 Club Sign Up Confirmation
+                    </h3>
+                    <p id="output-title" class="text-lg mb-2"><span class="font-semibold text-amber-800">Book:</span>
+                    </p>
+                    <p id="output-name" class="text-lg mb-2"><span class="font-semibold text-amber-800">Name:</span></p>
+                    <p id=output-email" class="text-lg"><span class="font-semibold text-amber-800">Email:</span></p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <section class="mt-16">
+        <h2 class="text-3xl font-bold text-amber-900 text-center mb-8 border-b-2 border-amber-400 pb-2">
+            Featured Books
+        </h2>
+
+        <div class="flex flex-wrap justify-center gap-8">
+            <div class="bg-white border-2 border-amber-400 rounded-xl shadow-lg p-6 max-w-xs flex flex-col items-center text-center hover:shadow-amber-300 transition-transform transform hover:scale-105">
+                <img src="assets/Dune.jpg" alt="Dune cover" class="w-32 h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-bold text-amber-900 mb-2">Dune</h3>
+                <p class="text-amber-700">by Frank Herbert</p>
+            </div>
+
+            <div class="bg-white border-2 border-amber-400 rounded-xl shadow-lg p-6 max-w-xs flex flex-col items-center text-center hover:shadow-amber-300 transition-transform transform hover:scale-105">
+                <img src="assets/TheCallOfTheWild.jpg" alt="The Call of the Wild cover"
+                     class="w-32 h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-bold text-amber-900 mb-2">The Call of the Wild</h3>
+                <p class="text-amber-700">by Jack London</p>
+            </div>
+
+            <div class="bg-white border-2 border-amber-400 rounded-xl shadow-lg p-6 max-w-xs flex flex-col items-center text-center hover:shadow-amber-300 transition-transform transform hover:scale-105">
+                <img src="assets/TheInvisibleMan.jpg" alt="The Invisible Man cover"
+                     class="w-32 h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-bold text-amber-900 mb-2">The Invisible Man</h3>
+                <p class="text-amber-700">by H.G. Wells</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+<footer class="bg-amber-900 text-amber-100 mt-16 py-6">
+    <div class="container mx-auto px-6 text-center">
+        <p>Ottumwa Public Library</p>
+    </div>
+</footer>
+</body>
+</html>

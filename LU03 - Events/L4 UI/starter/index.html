@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Loan Qualifier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-amber-50 min-h-screen flex flex-col items-center justify-center p-6">
+<div class="bg-white p-8 rounded-2xl shadow-lg max-w-md w-full border border-amber-300">
+    <h1 class="text-3xl font-bold text-center text-amber-900 mb-6">
+        💳 Loan Qualification Check
+    </h1>
+
+    <form id="loanForm" class="space-y-4">
+        <div>
+            <label for="income" class="block text-amber-900 font-semibold mb-1">Monthly Income ($)</label>
+            <input type="number" id="income"
+                   class="w-full border border-amber-300 rounded-lg p-2 focus:ring-2 focus:ring-amber-400 outline-none"
+                   min="0" required>
+        </div>
+
+        <div>
+            <label for="expenses" class="block text-amber-900 font-semibold mb-1">Monthly Expenses ($)</label>
+            <input type="number" id="expenses"
+                   class="w-full border border-amber-300 rounded-lg p-2 focus:ring-2 focus:ring-amber-400 outline-none"
+                   min="0" required>
+        </div>
+
+        <div>
+            <label for="creditScore" class="block text-amber-900 font-semibold mb-1">Credit Score</label>
+            <input type="number" id="creditScore"
+                   class="w-full border border-amber-300 rounded-lg p-2 focus:ring-2 focus:ring-amber-400 outline-none"
+                   min="300" max="850" required>
+        </div>
+
+        <div>
+            <label for="loanAmount" class="block text-amber-900 font-semibold mb-1">Desired Loan Amount ($)</label>
+            <input type="number" id="loanAmount"
+                   class="w-full border border-amber-300 rounded-lg p-2 focus:ring-2 focus:ring-amber-400 outline-none"
+                   min="1000" required>
+        </div>
+
+        <button
+                type="submit"
+                class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-2 rounded-lg transition-transform transform hover:scale-105"
+        >
+            Check Qualification
+        </button>
+    </form>
+
+    <div id="resultBox" class="hidden mt-6 bg-amber-100 border border-amber-300 rounded-lg p-4 text-left">
+        <p id="resultMessage" class="text-xl font-bold text-amber-900 mb-2"></p>
+        <p><span class="font-semibold">Monthly Income:</span> <span id="outIncome"></span></p>
+        <p><span class="font-semibold">Monthly Expenses:</span> <span id="outExpenses"></span></p>
+        <p><span class="font-semibold">Debt-to-Income Ratio:</span> <span id="outRatio"></span></p>
+        <p><span class="font-semibold">Credit Score:</span> <span id="outCredit"></span></p>
+        <p><span class="font-semibold">Requested Loan:</span> <span id="outLoan"></span></p>
+    </div>
+</div>
+</body>
+</html>

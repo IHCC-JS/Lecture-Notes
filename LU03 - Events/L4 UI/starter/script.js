@@ -1,0 +1,7 @@
+const EXCELLENT_CREDIT = 720;
+const GOOD_CREDIT = 650;
+const MAX_RATIO_BEST = 0.35;
+const MAX_RATIO_MID = 0.45;
+const MULTIPLIER_BEST = 6;
+const MULTIPLIER_MID = 4;
+
