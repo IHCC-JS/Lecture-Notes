@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>map — Intro</title>
+</head>
+<body>
+
+<h1>Map</h1>
+<ul id="output">
+
+</ul>
+
+<script>
+    const output = document.querySelector('#output');
+    const names = ['alice', 'bob', 'charlie'];
+
+    //use map to loop through the array and return a new array
+    const capitalized = names.map(n => n[0].toUpperCase() + n.slice(1));
+    capitalized.map(n => output.innerHTML += `<li>${n}</li>`);
+
+
+    // map doesn't mutate original values
+    console.log('original names:', names);
+</script>
+</body>
+</html>

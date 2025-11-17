@@ -27,7 +27,8 @@
 - The internet needed to be more powerful, Plan A was to use Java, that idea was bad
 - Plan B was to build something new.
 - Mocha (JS) was born in 10 days, they had no idea what they had built and the importance of it
-- Mocha become LiveScript and shipped in Netscape Navigator 2.0 DEC-1995 and renamed it JavaScript (this was done just for
+- Mocha become LiveScript and shipped in Netscape Navigator 2.0 DEC-1995 and renamed it JavaScript (this was done just
+  for
   marketing Java was very hot then)
 - This small and upcoming company Microsoft wanted their own browser called IE and browned JS and called it JScript...
   sus
@@ -66,7 +67,6 @@ If you don't know if you have it installed, type the following in CMD
 node -v
 ```
 
-
 ### Text Editor
 
 You can use anything, but this is what I recommend.
@@ -81,15 +81,25 @@ You can use anything, but this is what I recommend.
     - [vscode-pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf) so you can see the HW in your
       editor.
 
-
 ## Git Org
 
 Have students look at and Join the GitHub Organization.
 Show students where their notes and homework are.
 
+Also make sure students have Git installed.
+
+```bash
+git --version
+```
+
 ## First JS Exercise
+
+[//]: # (TODO make this exercise a bit more)
+[//]: # (Most students already had Git, Node.js, and VSCode installed)
+[//]: # (Don't step on L2's toes but make it a bit larger. Extra 5 minutes of content)
 
 - Make HTML template using [Emmet](https://docs.emmet.io/cheat-sheet/)
 - Add `<h1>Getting Started With JavaScript</h1>`
 - Add an internal Script `<script>console.log("up and running");</script>`
 - Run exercise in a browser and check the console.
+

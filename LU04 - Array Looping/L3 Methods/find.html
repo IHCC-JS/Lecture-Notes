@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>find</title>
+</head>
+<body>
+<h1>find</h1>
+<p>Return the first element that matches the check you provide.</p>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find">Array.prototype.find()</a>
+
+<p>Type a fruit to search for:</p>
+<input id="search" placeholder="e.g., apple"/>
+
+<div id="result" style="margin-top: 15px; font-weight: bold;"></div>
+
+<ul id="outputAll">
+
+</ul>
+
+<script>
+    const fruits = ["apple", "banana", "orange", "kiwi", "grape", "mango"];
+
+    const input = document.querySelector("#search");
+    const result = document.querySelector("#result");
+    const outputAll = document.querySelector("#outputAll");
+
+    //output all fruits as <li>
+    fruits.map(fruit => outputAll.innerHTML += `<li>${fruit}</li>`);
+
+    //each time the user types, we try to find the fruit
+    input.addEventListener("input", () => {
+        //trim and lowercase the input
+        const value = input.value.trim().toLowerCase();
+        const found = fruits.find(fruit => fruit.toLowerCase() === value);
+
+        //or we can use the ternary operator
+        //result.textContent = found ? `Found: ${found}` : "Not found";
+        if (found) {
+            result.textContent = `Found: ${found}`;
+        } else {
+            result.textContent = "Not found";
+        }
+    });
+</script>
+
+</body>
+</html>

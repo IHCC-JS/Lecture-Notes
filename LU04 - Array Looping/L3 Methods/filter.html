@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Filtered Display</title>
+</head>
+<body>
+<h1>Class Codes</h1>
+
+<label for="onlyCIS">Show only CIS classes: </label>
+<input id="onlyCIS" type="checkbox">
+
+<ul id="classList"></ul>
+
+<script>
+    const classes = [
+        "CIS598 - Python",
+        "CIS134 - Web Design",
+        "ENG101 - Composition",
+        "MAT110 - Algebra",
+        "BIO120 - Biology",
+        "CIS351 - Intro to Database",
+        "HIS200 - US History"
+    ];
+
+    const ul = document.querySelector('#classList');
+    const onlyCIS = document.querySelector('#onlyCIS');
+
+    //on load display all classes
+    for (const cls of classes) {
+        const li = document.createElement('li');
+        li.textContent = cls;
+        ul.appendChild(li);
+    }
+
+
+    //when the checkbox is clicked, filter the NON-CIS classes
+    onlyCIS.addEventListener('change', function () {
+        ul.textContent = '';
+
+        if (onlyCIS.checked) {
+            const cisOnly = classes.filter(c => c.startsWith("CIS"));
+            for (const cls of cisOnly) {
+                const li = document.createElement('li');
+                li.textContent = cls;
+                ul.appendChild(li);
+            }
+        } else {
+            //reload the page to show all classes
+            window.location.reload();
+        }
+    });
+</script>
+</body>
+</html>
