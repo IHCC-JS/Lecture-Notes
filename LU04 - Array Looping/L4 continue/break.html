@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Break</title>
+</head>
+<body>
+<h1>Break</h1>
+<p>Check the console</p>
+<script>
+    const nums = [4, 6, 9, -2, 10, 20];
+
+    //These do the same thing
+    //The difference is that the second one is more efficient, why?
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] < 0) {
+            console.log("Found a negative:", nums[i]);
+        }
+    }
+
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] < 0) {
+            console.log("Found a negative:", nums[i]);
+            break;
+        }
+    }
+</script>
+</body>
+</html>
