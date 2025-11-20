@@ -19,7 +19,4 @@ https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Co
 
 If we have time, go look at the Unit 1 Demo example project. 
 Also, look at Unit 1 Lab one more time.
-Remind students of quiz and due dates. 
-
-
-
+Remind students of quiz and due dates.

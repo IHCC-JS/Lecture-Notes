@@ -59,3 +59,6 @@ Explain to students why we are using Node.js in the labs.
 Instructions on how to run it are in the README.md file.
 
 
+## Coding Standards
+
+Have a look at this class's Coding Standards.

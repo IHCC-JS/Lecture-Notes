@@ -5,9 +5,9 @@ In JavaScript, `break` and `continue` help you control how loops run.
 
 * Loops normally run straight from start → end.
 * But real programs often need exceptions:
-  * Skip some iterations
-  * Stop early
-  * Avoid unnecessary work
-  * Improve performance
-  * Keep logic clean
+    * Skip some iterations
+    * Stop early
+    * Avoid unnecessary work
+    * Improve performance
+    * Keep logic clean
 
