@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+
+<div class="max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-8 text-indigo-700">📚 Library Checkout</h1>
+
+    <div id="book-list" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="book-card bg-white p-6 rounded-lg shadow-lg"
+             data-status="available">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/ad/Project_Hail_Mary%2C_First_Edition_Cover_%282021%29.jpg"
+                 alt="Project Hail Maryl" class="object-cover mb-4 rounded-md">
+            <h3 class="book-title text-xl font-semibold text-gray-900 mb-2">Project Hail Maryl</h3>
+            <button class="checkout-btn w-full py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-150">
+                Checkout Book
+            </button>
+        </div>
+
+        <div class="book-card bg-white p-6 rounded-lg shadow-lg"
+             data-status="available">
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/63/DharmaBums.JPG" alt="dharma bums"
+                 class="object-cover mb-4 rounded-md">
+            <h3 class="book-title text-xl font-semibold text-gray-900 mb-2">dharma bums</h3>
+            <button class="checkout-btn w-full py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-150">
+                Checkout Book
+            </button>
+        </div>
+
+        <div class="book-card bg-white p-6 rounded-lg shadow-lg"
+             data-status="unavailable">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/DoAndroidsDream.png"
+                 alt="Do Androids Dream of Electric Sheep?" class="object-cover mb-4 rounded-md">
+            <h3 class="book-title text-xl font-semibold text-gray-900 mb-2">Do Androids Dream of Electric Sheep?</h3>
+            <button class="checkout-btn w-full py-2 bg-gray-400 text-white rounded-md cursor-not-allowed" disabled>
+                Unavailable
+            </button>
+        </div>
+
+    </div>
+
+    <div id="fine-calculator" class="mt-12 p-6 bg-white rounded-lg shadow-lg">
+        <h2 class="text-2xl font-semibold mb-4 text-gray-800">Fine Calculator</h2>
+        <form id="fine-form" class="flex space-x-4">
+            <div class="flex-1">
+                <label for="dueDate" class="block text-sm font-medium text-gray-700">Due Date</label>
+                <input type="date" id="dueDate"
+                       class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2" required>
+            </div>
+            <div class="flex-1">
+                <label for="returnDate" class="block text-sm font-medium text-gray-700">Return Date</label>
+                <input type="date" id="returnDate" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2"
+                       required>
+            </div>
+            <button type="submit" id="calculateFineBtn"
+                    class="mt-6 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition duration-150">
+                Calculate Fine
+            </button>
+        </form>
+        <p id="fineResult" class="mt-4 text-lg font-medium text-gray-600">Total Fine: $0.00</p>
+    </div>
+</div>
+
+<script>
+    "use strict";
+
+    const FINE_RATE_PER_DAY = 0.25;
+    const GRACE_PERIOD_DAYS = 14;
+
+    function handleCheckout(event) {
+
+    }
+
+    function calculateFine(event) {
+
+    }
+</script>
+</body>
+</html>
