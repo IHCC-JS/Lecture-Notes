@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Document Object Model</title>
 </head>
 
 <body>
-<!--This is just for an example DON"T DO THING THIS WAY-->
+<!--This is just for an example DON'T DO THING THIS WAY-->
 <button onclick="clickMe()">Click Me</button>
 <script>
-    const random = (number) => {
-        return Math.floor(Math.random() * (number + 1));
-    }
-
-    const clickMe = () => {
+    function clickMe () {
         alert('We can attach event on HTML element')
-        const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
-        document.body.style.backgroundColor = rndCol;
+
+        let random1 = Math.floor(Math.random() * (255 + 1));
+        let random2 = Math.floor(Math.random() * (255 + 1));
+        let random3 = Math.floor(Math.random() * (255 + 1));
+
+        const randomColor = "rgb(" + random1 + "," + random2  + "," + random3 + ")" ;
+        document.body.style.backgroundColor = randomColor;
     }
 </script>
 </body>
