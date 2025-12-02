@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Object Literals</title>
+</head>
+<body>
+<h1>JavaScript Object Literals</h1>
+<p>Check the console for output.</p>
+<script>
+    //Object Literals
+    //Spend some time having students build these objects
+    const studentProfile = {
+        firstName: "Marcus",
+        lastName: "Chen",
+        studentId: 78901,
+        major: "Electrical Engineering",
+        gpa: 3.95
+    };
+
+    const bookDetails = {
+        title: "The JS Handbook",
+        author: "Jane Doe",
+        isbn: "978-0131103627",
+        priceUSD: 49.99,
+        "in stock": 15 // Key with a space requires bracket notation
+    };
+
+    const carConfig = {
+        make: "Tesla",
+        model: "Model 3",
+        year: 2024,
+        color: "Midnight Silver",
+        isElectric: true,
+        features: ["Autopilot", "Sunroof"],
+        "2024Price": 55000 // Key starting with a number requires bracket notation
+    };
+
+
+    function demonstrateDotNotation() {
+        console.groupCollapsed("Dot Notation Demonstration");
+
+        const bookTitle = bookDetails.title;
+
+        console.log("1. Reading Student GPA:", studentProfile.gpa);
+        console.log("2. Reading Book Title:", bookTitle);
+
+        // UPDATE a property using dot notation
+        studentProfile.gpa = 4.0;
+        console.log("3. UPDATING studentProfile.gpa to 4.0:", studentProfile.gpa);
+        console.log("Updated Student Object:", studentProfile);
+
+        // ADD a new property using dot notation
+        carConfig.transmission = "Automatic";
+        console.log("4. ADDING carConfig.transmission:", carConfig.transmission);
+        console.log("Updated Car Object:", carConfig);
+
+        console.groupEnd();
+    }
+
+    function demonstrateBracketNotation() {
+        console.groupCollapsed("Bracket Notation Demonstration");
+
+        //1: Keys with invalid characters (space)
+        console.log("1. Reading Stock:", bookDetails["in stock"]);
+
+        //2: Keys with invalid characters (starting with number)
+        const carPrice = carConfig["2024Price"];
+        console.log("2. Reading Car Price:", carPrice);
+
+        //3: Dynamic access via a variable
+        const propertyKey = "major";
+        const marcusMajor = studentProfile[propertyKey];
+        console.log(`3. Dynamic Access:`, marcusMajor);
+
+        console.groupEnd();
+    }
+
+    // Only run one function at a time
+    demonstrateDotNotation();
+    demonstrateBracketNotation();
+</script>
+</body>
+</html>
