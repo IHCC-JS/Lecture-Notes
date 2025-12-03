@@ -1,1 +1,9 @@
-https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/23_Day_Event_listeners/23_day_event_listeners.md
+# L2 Event Listeners
+
+## Example 1
+
+## Example 2
+
+## LU02 Lab check-in
+
+Ask students to open up their lab, and I will check up on their progress.

@@ -31,19 +31,18 @@
 </div>
 
 <script>
+    const instruction = document.getElementById('instruction');
+    const keyInfo = document.getElementById('key-info');
+    const codeDisplay = document.getElementById('code-display');
+    const keyValue = document.getElementById('key-value');
+
     // https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event
     document.addEventListener('keydown', (e) => {
         console.log(e);
 
-        const instruction = document.getElementById('instruction');
-        const keyInfo = document.getElementById('key-info');
-        const codeDisplay = document.getElementById('code-display');
-        const keyValue = document.getElementById('key-value');
-
         // hide the instruction and show the key info
         instruction.classList.add('hidden');
         keyInfo.classList.remove('hidden');
-
 
         codeDisplay.textContent = e.code;
         keyValue.textContent = e.key;
