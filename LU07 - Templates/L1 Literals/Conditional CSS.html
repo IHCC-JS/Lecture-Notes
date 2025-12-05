@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional CSS Styling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<h1 class="text-3xl font-bold">Dynamic Styling with Template Literals</h1>
+
+<div id="statusBox">
+    <p id="statusText"></p>
+    <p id="statusMessage">Click to change state</p>
+</div>
+
+<button class="bg-purple-600 text-white py-3 px-8 rounded-full">
+    Toggle Connection State
+</button>
+
+<script>
+    let isConnected = true;
+
+    const button = document.querySelector('button');
+    const statusBox = document.querySelector('#statusBox');
+    const statusText = document.querySelector('#statusText');
+    const statusMessage = document.querySelector('#statusMessage');
+
+    button.addEventListener('click', () => {
+        isConnected = !isConnected;
+        updateStatusDisplay();
+    });
+
+    function updateStatusDisplay() {
+        let dynamicClasses;
+
+        if (isConnected) {
+            dynamicClasses = 'bg-green-500 border-8 border-green-200'
+        } else {
+            dynamicClasses = 'bg-red-500 border-8 border-red-200 opacity-60'
+        }
+
+        //  The template literal is used to combine static and dynamic classes seamlessly.
+        statusBox.className = `
+                w-48 h-48 mx-auto flex flex-col justify-center items-center rounded-full transition-all duration-700 text-white shadow-xl mb-8
+                ${dynamicClasses}
+        `;
+
+        // Update text content
+        statusText.textContent = isConnected ? 'CONNECTED' : 'DISCONNECTED';
+        statusMessage.textContent = isConnected ? 'Data stream is live.' : 'Attempting to reconnect...';
+    }
+
+    updateStatusDisplay();
+</script>
+</body>
+</html>

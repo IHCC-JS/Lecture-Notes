@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Map</title>
+</head>
+<body>
+<!--TODO add some tailwindcss-->
+<h1>Using the Map Function</h1>
+<p>We take in a hard-coded array of objects and turn them into an array of HTML</p>
+<div id="classes">
+
+</div>
+<script>
+    // hard-coded array of objects
+    const classes = [
+        {
+            code: "CIS281",
+            name: "Advanced Mobile Development",
+            teacher: "Luke Matheis",
+            students: [
+                {
+                    name: "Jane Doe",
+                    grade: 90
+                },
+                {
+                    name: "John Doe",
+                    grade: 80
+                }
+            ]
+        },
+        {
+            code: "BCA185",
+            name: "Beginning Web Development",
+            teacher: "Luke Matheis",
+            students: [
+                {
+                    name: "Jane Doe",
+                    grade: 90
+                },
+                {
+                    name: "John Doe",
+                    grade: 80
+                }
+            ]
+        }
+    ]
+
+    const htmlOutput = document.querySelector('#classes');
+
+    function convertClassToHTML(singleClass) {
+        //use map to convert each student to table row HTML
+        //Need to use the join method to combine the array of HTML strings into a single string
+        const students = singleClass.students.map(student => {
+            return`
+                    <tr>
+                        <th>${student.name}</th>
+                        <td>${student.grade}</td>
+                    </tr>
+                `;
+        }).join("");
+
+        return `
+             <div class="card">
+                <h2>${singleClass.code}: ${singleClass.name}</h2>
+                <p>Teacher: ${singleClass.teacher}</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${students}
+                    </tbody>
+                </table>
+             </div>
+        `;
+    }
+
+    // call the function with a class manually first
+    //convertClassToHTML(classes[1]);
+    // htmlOutput.innerHTML = convertClassToHTML(classes[0]);
+
+    htmlOutput.innerHTML = classes.map(convertClassToHTML).join("");
+
+</script>
+</body>
+</html>

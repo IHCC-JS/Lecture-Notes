@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Template Liberals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8 md:p-16 bg-gray-900 text-gray-300">
+<div class="max-w-6xl mx-auto">
+    <h1 class="text-6xl text-amber-500 mb-4 uppercase">Factorio</h1>
+    <p>This website demonstrates the use of Template Liberals using Factorio as an
+        example.</p>
+    <div id="about" class="mb-16">
+
+    </div>
+    <div id="blog" class="mb-16">
+
+    </div>
+    <div id="artwork" class="mb-16">
+
+    </div>
+</div>
+
+<script>
+    const aboutText = "Factorio is a game in which you build and maintain factories. ";
+    const blogPosts = [
+        {
+            header: " Friday Facts #439 - Factorio and Space Age on Nintendo Switch 2™",
+            body: "Similar to other games, we decided to release a Nintendo Switch 2 Edition, an upgrade you can get if you own the game for the original Switch. If you don't have the game you can get it as part of a 'bundle' which is the game with the Switch 2 edition upgrade. Nintendo has some more information/clarification about Switch 2 editions",
+            image: "assets/switch-2-edition.png"
+        }
+    ];
+    const artwork = [
+        "Check out our page of Factorio artwork, concept sketches, and behind the scenes images.",
+        "assets/rocket-man.jpg"
+    ];
+
+    const about = document.querySelector("#about");
+    const blog = document.querySelector("#blog");
+    const artworks = document.querySelector("#artwork");
+
+    const aboutHtml = `
+        <h2 class="text-3xl text-gray-200 mb-6 border-b-2 border-gray-700">Game Overview</h2>
+        <div class="bg-gray-800 border-l-4 border-amber-500 shadow-xl p-6 rounded-lg">
+            ${aboutText}
+        </div>
+    `;
+    about.innerHTML = aboutHtml;
+
+    const blogHtml = `
+        <h2 class="text-3xl font-bold text-gray-200 mb-6 border-b-2 border-gray-700">Latest Blog Post</h2>
+        <div class="bg-gray-800 border-l-4 border-amber-500 shadow-xl rounded-lg overflow-hidden md:flex">
+            <img src="${blogPosts[0].image}" alt="Blog Post Image"
+                 class="md:w-1/2 w-full h-[250px] object-cover"
+            <div class="p-6 md:w-1/2">
+                <h3 class="text-2xl font-semibold text-amber-500 mb-3">${blogPosts[0].header}</h3>
+                <p class="text-gray-300">
+                    ${blogPosts[0].body}
+                </p>
+            </div>
+        </div>
+    `;
+    blog.innerHTML = blogHtml;
+
+    const artworkHtml = `
+        <h2 class="text-3xl font-bold text-gray-200 mb-6 border-b-2 border-gray-700">Art and Concepts</h2>
+        <div class="bg-gray-800 border-l-4 border-amber-500 shadow-xl p-6 rounded-lg">
+            <p class="text-lg text-gray-300 mb-4">${artwork[0]}</p>
+            <img src="${artwork[1]}" alt="Rocket Man Concept"
+                 class="w-full rounded-md border-2 border-amber-500/50 h-[250px] object-cover"
+        </div>
+    `;
+    artworks.innerHTML = artworkHtml;
+</script>
+</body>
+</html>
