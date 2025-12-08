@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loading JSON</title>
+</head>
+<body>
+<h1>Leading JSON</h1>
+<p>Today we will play around with converting to and from JSON</p>
+<ul>
+    <li>Data (JS) -> Text (JSON) = Serialization</li>
+    <li>Text (JSON) -> Data (JS) = Deserialize</li>
+</ul>
+<p>Check the Console and the Script</p>
+<script>
+    const names = ["Spongebob", "Patrick", "Squidward"];
+    const people = [
+        {
+            "name": "Spongebob",
+            "age": 30,
+            "isEmployed": true
+        },
+        {
+            "name": "Patrick",
+            "age": 34,
+            "isEmployed": false
+        },
+        {
+            "name": "Squidward",
+            "age": 45,
+            "isEmployed": true
+        }
+    ];
+
+    console.log("The names object (array): ", names);
+    const jsonNames = JSON.stringify(names);
+    console.log("The names as a string: ", jsonNames);
+
+
+    console.log("The people array of objects: ", people);
+    const jsonString = JSON.stringify(people);
+    console.log("The people as a big string", jsonString);
+
+    //Question: Why is this useful? Why would we want to turn JS Objects into Strings?
+    //Answer: We can store them in a file and load them back later. Or send them to a server (API).
+
+    //Loading JSON from a file
+
+    fetch("people.json")
+        .then(response => response.json()) //converts JSON to JS object: https://developer.mozilla.org/en-US/docs/Web/API/Request/json
+        .then(data => console.log(data))
+        .catch(error => console.error("You probably have the file name/path wrong: ", error));
+
+    async function ReturnJobStatus(){
+        const response = await fetch("people.json");
+        const data = await response.json();
+        data.forEach(person => {
+            if(person.isEmployed === true){
+                console.log(person.name + " is employed!");
+            }else{
+                console.log(person.name + " is not employed!");
+            }
+        });
+    }
+
+    ReturnJobStatus();
+
+</script>
+</body>
+</html>
