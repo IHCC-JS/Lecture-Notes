@@ -9,14 +9,31 @@
 </head>
 <body class="min-h-screen bg-gray-100 flex flex-col items-center p-6">
 <main class="w-full max-w-lg bg-white shadow-md rounded-xl p-6 space-y-6">
-    <h1 class="text-2xl font-bold text-center text-gray-800">Bikini Bottom CRUD</h1>
+    <h1 class="text-2xl font-bold text-center text-gray-800">Bikini Bottom CRUDish</h1>
     <p class="text-gray-600 leading-relaxed">This project uses JSON data to seed and then uses Local Storage for data
         persistence</p>
     <form id="add-person-form" class="flex flex-col gap-3">
-        <!--TODO build a form that fits my JSON schema-->
-        <input type="submit" class="bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Add Task</input>
-    </form>
-
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <div>
+            <label for="isEmployed">Employment Status: </label>
+            <select name="isEmployed" id="isEmployed">
+                <option value="true">Employed</option>
+                <option value="false">Unemployed</option>
+            </select>
+        </div>
+        <div>
+            <!-- https://cdn.spongebobwiki.org/e/e6/Sandy_Cheeks.png-->
+            <label for="image">Image URL:</label>
+            <input type="text" name="image" id="image">
+        </div>
+        <input type="submit" value="Add Person" class="bg-blue-500 text-white py-2 rounded hover:bg-blue-600"/>
     <div id="bikini-bottom-list" class="space-y-3">
         <!--  Filled by JS -->
     </div>
