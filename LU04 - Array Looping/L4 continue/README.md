@@ -11,3 +11,12 @@ In JavaScript, `break` and `continue` help you control how loops run.
     * Improve performance
     * Keep logic clean
 
+Do the examples in this order:
+
+- [continue](continue.html)
+- [break](break.html)
+- [compare](compare.html)
+
+## Demo
+
+Loop at the demo if you have time. 

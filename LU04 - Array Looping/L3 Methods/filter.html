@@ -27,6 +27,7 @@
     const ul = document.querySelector('#classList');
     const onlyCIS = document.querySelector('#onlyCIS');
 
+    //Question: Could we use a map instead?
     //on load display all classes
     for (const cls of classes) {
         const li = document.createElement('li');
@@ -37,7 +38,7 @@
 
     //when the checkbox is clicked, filter the NON-CIS classes
     onlyCIS.addEventListener('change', function () {
-        ul.textContent = '';
+        ul.innerHTML = '';
 
         if (onlyCIS.checked) {
             const cisOnly = classes.filter(c => c.startsWith("CIS"));

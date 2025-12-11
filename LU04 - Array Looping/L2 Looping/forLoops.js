@@ -21,7 +21,6 @@ for (let i = 0; i <= 5; i++) {
     console.log(`${i} * ${i} = ${i * i}`)
 }
 
-
 //Example of looping thought to change the array
 const countries = ['United States', 'Mexico', 'Canada', 'Cuba', 'Panama']
 const newArr = []

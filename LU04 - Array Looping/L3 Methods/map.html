@@ -18,7 +18,7 @@
 
     //use map to loop through the array and return a new array
     const capitalized = names.map(n => n[0].toUpperCase() + n.slice(1));
-    capitalized.map(n => output.innerHTML += `<li>${n}</li>`);
+    capitalized.map(n => output.innerHTML += "<li>" + n + "</li>");
 
 
     // map doesn't mutate original values

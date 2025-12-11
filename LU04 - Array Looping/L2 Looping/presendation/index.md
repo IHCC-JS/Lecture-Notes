@@ -33,6 +33,12 @@ All loops follow the same basic logic:
 
 -----
 
+## Gif
+
+![loop](loop.gif)
+
+-----
+
 ## `for` Loop
 
 The `for` loop is the most common loop and is ideal you want full control over the number of iterations.
@@ -90,11 +96,11 @@ do {
 
 JavaScript provides special loops for working with arrays and objects.
 
-| Loop Type             | Best Used For                                                         | Example                          |
-|:----------------------|:----------------------------------------------------------------------|:---------------------------------|
-| **`for...of`**        | Getting the **values** of iterable collections (Arrays).              | `for (const item of myArray)`    |
-| **`for...in`**        | Iterating over the **property names (keys)** of an object.            | `for (const key in myObject)`    |
-| **`Array.forEach()`** | A built-in array method for executing a function for each element.    | `myArray.forEach(element => {})` |
+| Loop Type             | Best Used For                                                      | Example                          |
+|:----------------------|:-------------------------------------------------------------------|:---------------------------------|
+| **`for...of`**        | Getting the **values** of iterable collections (Arrays).           | `for (const item of myArray)`    |
+| **`for...in`**        | Iterating over the **property names (keys)** of an object.         | `for (const key in myObject)`    |
+| **`Array.forEach()`** | A built-in array method for executing a function for each element. | `myArray.forEach(element => {})` |
 
 -----
 

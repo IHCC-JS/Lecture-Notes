@@ -6,4 +6,3 @@ It uses the same topics we are talking about in this Unit.
 A good programmer is a lazy programmer.
 
 [Project-Template](https://github.com/IHCC-JS/Project-Template)
-v
