@@ -31,7 +31,7 @@ Test will be 60 points total (very roughly 12% of your final grade).
 - If you misspell the name of a method or make a small typo, I will be lenient.
 - What I am focusing on is your ability to solve the problem and knowledge of the JS language.
 
-> ⚠️**THIS IS NOT SUDO CODE**. Don't just submit human language.
+> ⚠️**THIS IS NOT Pseudocode**. Don't just submit human language.
 
 ## Concepts
 
