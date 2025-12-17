@@ -1,5 +1,8 @@
 # Functions
 
+- [Code Bro](https://www.youtube.com/watch?v=HFaxylC7bUc)
+- [Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+
 1. a function is a reusable block of code to perform a certain task.
 2. A function can be declared or created in a couple of ways:
     - Declaration function

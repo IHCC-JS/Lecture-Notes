@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Mercury",
+    "distanceAU": 0.4
+  },
+  {
+    "name": "Venus",
+    "distanceAU": 0.7
+  },
+  {
+    "name": "Earth",
+    "distanceAU": 1.0
+  },
+  {
+    "name": "Mars",
+    "distanceAU": 1.5
+  },
+  {
+    "name": "Jupiter",
+    "distanceAU": 5.2
+  },
+  {
+    "name": "Saturn",
+    "distanceAU": 9.5
+  },
+  {
+    "name": "Uranus",
+    "distanceAU": 19.2
+  },
+  {
+    "name": "Neptune",
+    "distanceAU": 30.1
+  }
+]
