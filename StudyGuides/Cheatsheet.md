@@ -53,6 +53,7 @@ let obj = { id: 1, name: "luke" }; // Object: Key-value pairs
 const el = document.getElementById("myId"); // Find element by its ID
 const box = document.querySelector(".myClass"); // Find first element by CSS selector
 const list = document.querySelectorAll("p"); // Find all <p> tags; returns a list
+const lastP = document.querySelector("div p:last-child"); // Find last <p> inside a div
 ```
 
 **Editing Elements**
@@ -207,7 +208,6 @@ Math.max(1, 5, 10); // Pick the largest number (10)
 // Get random whole number between 1 and 10:
 Math.floor(Math.random() * 10) + 1;
 ```
-<br>
 
 ## Errors
 
