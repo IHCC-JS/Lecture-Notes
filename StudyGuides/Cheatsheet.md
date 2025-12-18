@@ -21,6 +21,15 @@ confirm("Are you sure?"); // OK/Cancel box; returns true (OK) or false (Cancel)
 prompt("Age?", "18"); // Input box; 2nd value "18" is the default answer
 ```
 
+**Conditionals**
+
+| Operator | Meaning                     | Example            |
+| :------- | :-------------------------- | :----------------- |
+| ==       | Equal Value                 | 5 == "5" is true   |
+| ===      | Strict Equal (Value + Type) | 5 === "5" is false |
+| &&       | AND (Both must be true)     | (5 > 1 && 10 > 1)  |
+| !        | NOT (Opposite)              | !true is false     |
+
 **Variables & Data Types**
 
 ```javascript
@@ -110,7 +119,7 @@ for (let item of items) {
 }
 ```
 
-**While Lop**
+**While Loop**
 
 ```javascript
 let energy = 3;
@@ -152,8 +161,8 @@ fruits.join(", "); // Turn array into string: "Kiwi, Banana"
 fruitsAllCaps = fruits.map((fruit) => fruit.toUpperCase());
 longFruits = fruits.filter((fruit) => fruit.length > 5); // ["Banana"]
 ```
-<br>
----
+
+## <br>
 
 ## Functions
 
@@ -198,8 +207,7 @@ Math.max(1, 5, 10); // Pick the largest number (10)
 // Get random whole number between 1 and 10:
 Math.floor(Math.random() * 10) + 1;
 ```
-
----
+<br>
 
 ## Errors
 
@@ -209,4 +217,48 @@ try {
 } catch (err) {
     console.log(err.message); // If code fails, run this and show the error
 }
+```
+
+---
+
+## Templates
+
+```javascript
+const template = `<h1>Hello ${name}</h1>`;
+const htmlTable = `<table>
+<tr>
+    <th>Name</th>
+    <th>Age</th>
+</tr>
+${people
+    .map((person) => `<tr><td>${person.name}</td><td>${person.age}</td></tr>`)
+    .join("")}
+</table>`;
+```
+
+---
+
+## Fetch, JSON, OOP
+
+```javascript
+const response = await fetch("resource.json"); // get remote data
+const data = await response.json(); //Parse JSON data
+const str = JSON.stringify(data); //Convert data to a string:
+const obj = JSON.parse(str); //Convert string back to JSON:
+```
+
+**JS Classes**
+
+```javascript
+class Car {
+    constructor(make, model) {//make a class (Blueprint)
+        this.make = make;
+        this.model = model;
+    }
+    drive() {//method that any instance of Car can use
+        console.log(`${this.make} ${this.model} is driving!`);
+    }
+}
+const myCar = new Car("Ford", "Mustang"); //makes a car from the blueprint
+myCar.drive(); //calls the method
 ```
