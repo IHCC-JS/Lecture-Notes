@@ -1,0 +1,27 @@
+@port = 3000
+@baseUrl = http://localhost:{{port}}/api
+
+### Get all guests
+GET {{baseUrl}}/guests
+Accept: application/json
+
+
+### Post a new guest (Plus One: True)
+POST {{baseUrl}}/guests
+Content-Type: application/json
+
+{
+    "name": "{{$random.name.fullName}}",
+    "message": "{{$random.lorem.sentence}}",
+    "plusOne": true
+}
+
+### Post a new guest (Plus One: False)
+POST {{baseUrl}}/guests
+Content-Type: application/json
+
+{
+    "name": "{{$random.name.fullName}}",
+    "message": "{{$random.lorem.sentence}}",
+    "plusOne": false
+}

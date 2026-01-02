@@ -13,3 +13,6 @@ Only need to code `script.js`
 Given students the project that is 90% done.
 Have students finish the rest of the project in class.
 Have it due midnight that night.
+
+Repo: https://github.com/IHCC-JS/Activity-Astronomical-Unit
+

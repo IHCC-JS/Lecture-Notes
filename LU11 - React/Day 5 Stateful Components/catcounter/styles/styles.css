@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    background-color: #ecf0f1;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.count {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.catContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    width: 80%;
+}
+
+.catItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catImage {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}

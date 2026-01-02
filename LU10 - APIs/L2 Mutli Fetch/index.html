@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Cat API</title>
+    <body>
+        <h1>Cat API Example</h1>
+        
+        <form id="catForm" action="#">
+            <label for="breedSelect">Select a Cat Breed:</label>
+            <select id="breedSelect" name="breedSelect">
+                <!-- API will populate this-->
+            </select>
+            <input type="submit" value="Fetch Cat Image" id="fetchCatButton">
+        </form>
+        
+        <div id="catImageContainer"></div>
+    </body>
+</html>

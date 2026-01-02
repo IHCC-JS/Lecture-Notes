@@ -1,0 +1,39 @@
+### Variables
+@port = 3000
+@baseUrl = http://localhost:{{port}}/api
+
+### GET All Games
+GET {{baseUrl}}/games
+Accept: application/json
+
+### POST a New Game
+POST {{baseUrl}}/games
+Content-Type: application/json
+
+{
+    "title": "Zombies Ate My Neighbors",
+    "platform": "SNES",
+    "releaseYear": 1996,
+    "isComplete": true
+}
+
+### POST another Game (Different Platform)
+POST {{baseUrl}}/games
+Content-Type: application/json
+
+{
+    "title": "Sonic the Hedgehog",
+    "platform": "Sega Genesis",
+    "releaseYear": 1991,
+    "isComplete": false
+}
+
+### GET Unique Platforms
+GET {{baseUrl}}/platforms
+
+### SEARCH by Platform
+GET {{baseUrl}}/games/search?platform=SNES
+
+### DELETE a Game
+# Replace '1' with an actual ID from your GET request
+DELETE {{baseUrl}}/games/1
