@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -82,12 +82,11 @@
         `;
     }
 
-    // call the function with a class manually first
-    //convertClassToHTML(classes[1]);
+    // NOTE: call the function with a class manually first
     // htmlOutput.innerHTML = convertClassToHTML(classes[0]);
 
+    //NOTE: Use an anonymous function first, then move the code to a named function
     htmlOutput.innerHTML = classes.map(convertClassToHTML).join("");
-
 </script>
 </body>
 </html>

@@ -6,3 +6,6 @@ We use this extra time to review previous topics, mostly objects.
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 - https://www.w3schools.com/js/js_string_templates.asp
+
+Cover [Template Literals](Template%20Literals.html) first.
+__IF__ you have time, cover [Conditional CSS](Conditional%20CSS.html)

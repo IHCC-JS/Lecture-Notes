@@ -4,6 +4,8 @@
 - https://www.w3schools.com/whatis/whatis_json.asp
 - https://www.youtube.com/watch?v=r4MLHHLctKw
 
+[//]: # (TODO this lecture was too short.)
+
 ## How to Run Marp
 
 In a terminal, run the following commands to see the slides:
@@ -19,12 +21,24 @@ Now right-click on `index.html` and select "Open in Browser" > "Build-in".
 
 In a `.json` file, Build the following structure:
 
-[//]: # (TODO steal this from later examples)
-
-[//]: # (So they build the JSOn they will use later.)
-
 ```json
-
+[
+  {
+    "name": "Spongebob",
+    "age": 30,
+    "isEmployed": true
+  },
+  {
+    "name": "Patrick",
+    "age": 34,
+    "isEmployed": false
+  },
+  {
+    "name": "Squidward",
+    "age": 45,
+    "isEmployed": true
+  }
+]
 ```
 
 ## Validate JSON
