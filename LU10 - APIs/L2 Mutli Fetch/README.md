@@ -1,4 +1,4 @@
-# Cat API Example Day 3
+# Cat API Example
 
 This is a simple web application that allows users to select a cat breed from a dropdown list and fetch a random cat image for the selected breed using the Cat API.
 

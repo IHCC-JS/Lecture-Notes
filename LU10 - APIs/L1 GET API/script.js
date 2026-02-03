@@ -24,7 +24,7 @@ const formatPoke = (poke) => {
 
 const handleFormSubmit = async (e) => {
     e.preventDefault();
-    const search = searchInput.value.trim();
+    const search = searchInput.value.trim(); //TODO lowercase
     const data = await getPokeData(search);
     console.log(data);
     formatPoke(data);

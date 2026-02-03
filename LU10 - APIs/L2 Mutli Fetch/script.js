@@ -1,5 +1,5 @@
 // Replace value with your actual Cat API key
-const apiKey = '6a5978ea-d50e-416e-900d-82727939cef9';
+const apiKey = 'PUT KEY HERE';
 
 //TODO show other breed data on screen for breed selected
 
