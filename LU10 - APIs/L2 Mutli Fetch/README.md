@@ -18,5 +18,3 @@ Replace `YOUR_API_KEY` in the `script.js` file with your actual Cat API key.
 ### Build out the app
 
 EOD
-
-

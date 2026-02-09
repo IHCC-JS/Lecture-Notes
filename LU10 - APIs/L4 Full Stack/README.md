@@ -1,8 +1,10 @@
 # L4 Full Stack
 
+<!-- TODO Make a Game.js Class -->
+
 Today we will build a larger project this time with a real DB.
-This example puts all previse topics together.
-It also pulls from your DB skills. 
+This example puts all previous topics together.
+It also pulls from your DB skills.
 
 ## Backend
 
@@ -29,4 +31,4 @@ What is SQLite?
 
 ## FrontEnd
 
-Build front end from scratch. 
+Build front end from scratch.

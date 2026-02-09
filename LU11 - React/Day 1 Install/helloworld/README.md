@@ -1,20 +1,24 @@
 ## Into to Next.js
 
-This is a simple hello world example for in class. 
+This is a simple hello world example for in class.
 
-## Install 
+## Install
 
 https://nextjs.org/docs/getting-started/installation
 
-https://nodejs.org/en  MAKE SURE YOU INSTALL CHOCOLATY 
+https://nodejs.org/en MAKE SURE YOU INSTALL CHOCOLATY
 
-Run this to create the app 
+```bash
+node --version # check node is installed
+```
+
+Run this to create the app
 `npx create-next-app@latest`
 
 If windows is being big dumb use this
 
 ```
-Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser 
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
 ```
 
 ### Windows C
