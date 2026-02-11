@@ -1,7 +1,9 @@
 # Next.js Intro to Tailwind
 
-[//]: # (TOOD add the Chinese_Tiangong_Space_Station )
-[//]: # (TOOD finish the README to include set up instructions)
+[//]: # "TOOD add the Chinese_Tiangong_Space_Station "
+[//]: # "TOOD finish the README to include set up instructions"
+
+<!-- TODO fix the image styling -->
 
 ## Add Outside Resources
 
