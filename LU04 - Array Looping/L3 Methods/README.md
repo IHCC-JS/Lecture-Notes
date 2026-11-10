@@ -3,7 +3,7 @@
 - [`map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) use array to make
   another array.
     - I used the array to create the array.
-    - I use this method all the time excealy to make an array of items into HTML.
+    - I use this method all the time to make an array of items into HTML.
     - look at the [`map.html`](map.html) file.
 - [`find`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
     - useful for searching through an array.

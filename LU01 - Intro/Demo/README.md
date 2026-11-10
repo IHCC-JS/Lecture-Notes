@@ -1,6 +1,7 @@
 # LU01 Demo
 
 This is an extra example of putting everything we learned in this unit together.
+Try to create this example on your own, if you get stuck, you can find the solution [here](./completed/index.html).
 
 1. The user must enter "Play" to start. We validate user input, input is not case-sensitive and trims spaces.
    ![UI Screenshoot](instructions/UIScreen1.webp)

@@ -1,6 +1,8 @@
-# Unit 5 Project 1: Where is Waldo?
+# LU02 Demo: Where is Waldo?
 
-Download the starter code and find all three waldos. You should not change the HTML directly use your JavaScript code to change the HTML using [`DOM`](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction). After finding each with [`querySelector()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).  I want you do change the following to the waldos after finding them.
+Download the starter code and find all three waldos. 
+You should not change the HTML directly use your JavaScript code to change the HTML using [`DOM`](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction). 
+After finding each with [`querySelector()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).  I want you do change the following to the waldos after finding them.
 
 ## Tasks
 

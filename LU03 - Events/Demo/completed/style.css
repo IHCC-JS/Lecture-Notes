@@ -1,0 +1,144 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body{
+  margin-top: 50px;
+  font-size: 1.1rem;
+  background-color: #252525;
+  color: #dddddd;
+}
+
+.left-column {
+  flex: 1;
+  padding: 20px;
+}
+  
+.right-column {
+  flex: 1;
+  padding: 20px;
+}
+
+.form {
+  width: 300px;
+  margin: 0 auto;
+  background-color: rgb(20, 20, 20);
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px #000000;
+}
+
+button[type="button"] {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #273872;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="button"]:hover {
+  background-color: #465ba1;
+}
+
+.inputs, button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head-color-code {
+  width: 600px;
+  margin: 0 auto;
+  background-color: rgb(20, 20, 20);
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px #000000;
+  text-align: center;
+}
+
+.color-codes {
+  display: inline-flex;
+}
+
+.color-block {
+  padding: 0px 50px 0px 50px;
+}
+
+.red {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 25px;
+}
+
+.green {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  border-radius: 25px;
+}
+
+.blue {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  border-radius: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+.number-header {
+  text-align: center;
+}
+
+.inside-bottom-column{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(20, 20, 20);
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px #000000;
+}
+
+#gen-blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  border-radius: 25px;
+}
+#gen-red{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 25px;
+}
+
+#gen-green{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  border-radius: 25px;
+}

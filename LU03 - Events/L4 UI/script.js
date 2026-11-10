@@ -1,7 +1,21 @@
-const EXCELLENT_CREDIT = 720;
-const GOOD_CREDIT = 650;
-const MAX_RATIO_BEST = 0.35;
-const MAX_RATIO_MID = 0.45;
-const MULTIPLIER_BEST = 6;
-const MULTIPLIER_MID = 4;
+const form = document.querySelector('form');
+const result = document.querySelector('#result');
 
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const data = new FormData(form);
+    const bill = Number(data.get('bill'));
+    const tipPercent = Number(data.get('tip'));
+
+    if (!bill || bill < 0 || !tipPercent) {
+        result.textContent =
+            'Please enter a valid bill amount and choose a tip.';
+        return;
+    }
+
+    const tipAmount = bill * (tipPercent / 100);
+    const total = bill + tipAmount;
+
+    result.textContent = `Tip: $${tipAmount.toFixed(2)} | Total: $${total.toFixed(2)}`;
+});

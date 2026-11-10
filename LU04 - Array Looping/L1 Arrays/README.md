@@ -1,6 +1,6 @@
 # Arrays
 
-![Digram](javascript_array.webp)
+![Diagram](javascript_array.webp)
 
 [Arrays W3Schools](https://www.w3schools.com/js/js_arrays.asp)
 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Calculating in a loop</h1>
+<p>
+    On boot up you should see a `prompt()`.
+    This prompt should ask you what operator you want to use. Then the though a `prompt()` the app will ask you for a
+    number.
+    Then the app will perform the operator of choice on the number given.
+    Example below.
+</p>
+<H2>Output</H2>
+<ul>
+    <li>
+        Operator: +
+    </li>
+    <li>
+        Number: 4
+    </li>
+</ul>
+
+<pre>
+<code>
+1 + 4 = 5
+2 + 4 = 6
+3 + 4 = 7
+4 + 4 = 8
+5 + 4 = 9
+6 + 4 = 10
+7 + 4 = 11
+8 + 4 = 12
+9 + 4 = 13
+10 + 4 = 14
+</code>
+</pre>
+
+<script>
+    const operation = prompt("Enter an operation to perform (+, -, *, /)");
+    const userNumber = prompt("Enter number you want use: ")
+
+    for (let number = 1; number <= 10; number++) {
+        let result;
+
+        switch (operation) {
+            case "+":
+                result = Number(number) + Number(userNumber);
+                break;
+            case "-":
+                result = number - userNumber;
+                break;
+            case "*":
+                result = number * userNumber;
+                break;
+            case "/":
+                result = number / userNumber;
+                break;
+            default:
+                console.log("Invalid operation");
+                break;
+        }
+
+        if (result !== undefined) {
+            console.log(`${number} ${operation} ${userNumber} = ${result}`);
+        }
+    }
+</script>
+</body>
+</html>

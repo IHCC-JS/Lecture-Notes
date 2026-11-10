@@ -52,6 +52,13 @@ Numbers
     - We use `let` and `const` instead.
     - You might run into `var` on the job due to legacy code.
 
+## Date and Time
+
+- [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object
+- [`Temporal`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal) new way.
+    - I am currently updating the labs to use this new. Safari might not support it yet but Chrome and Firefox do.
+
+
 ## Run the Lab
 
 Clone down the [Project Template](https://github.com/IHCC-JS/Project-Template) and run it's tests.

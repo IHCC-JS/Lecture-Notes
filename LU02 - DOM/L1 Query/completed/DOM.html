@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laika: The Space Dog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'space-dark': '#1a1a2e',
+                        'space-blue': '#16213e',
+                        'tech-orange': '#ff6b35',
+                        'tech-cream': '#f4e8c1',
+                        'metal-gray': '#a4a8b0',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Start without defer to show them what happens -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script#defer -->
+    <script src="searchingDOM.js" defer></script>
+</head>
+<body class="bg-space-dark text-tech-cream font-mono leading-relaxed">
+<header class="bg-space-blue border-b-4 border-tech-orange py-8 px-6 mb-8">
+    <h1 class="text-5xl font-bold text-tech-orange uppercase tracking-widest mb-6 text-center">Laika: The Animal in
+        Space</h1>
+    <nav class="max-w-4xl mx-auto">
+        <ul class="flex justify-center gap-8 text-lg">
+            <li><a href="#intro"
+                   class="text-tech-cream hover:text-tech-orange transition-colors duration-200 uppercase tracking-wider border-b-2 border-transparent hover:border-tech-orange pb-1">Intro</a>
+            </li>
+            <li><a href="#training"
+                   class="text-tech-cream hover:text-tech-orange transition-colors duration-200 uppercase tracking-wider border-b-2 border-transparent hover:border-tech-orange pb-1">Training</a>
+            </li>
+            <li><a href="#mission"
+                   class="text-tech-cream hover:text-tech-orange transition-colors duration-200 uppercase tracking-wider border-b-2 border-transparent hover:border-tech-orange pb-1">Mission</a>
+            </li>
+            <li><a href="#legacy"
+                   class="text-tech-cream hover:text-tech-orange transition-colors duration-200 uppercase tracking-wider border-b-2 border-transparent hover:border-tech-orange pb-1">Legacy</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="max-w-5xl mx-auto px-6 pb-12">
+    <section id="intro" class="bg-space-blue border-l-4 border-tech-orange p-8 mb-10 shadow-lg">
+        <h2 class="text-3xl font-bold text-tech-orange uppercase tracking-wide mb-4 border-b-2 border-metal-gray pb-2">
+            Who Was Laika?</h2>
+        <p class="text-lg leading-8 mb-6">
+            Laika was a stray dog found on the streets of Moscow in 1957.
+            She became the first living being to orbit Earth aboard the Soviet spacecraft <em class="text-tech-orange">Sputnik
+            2</em>.
+        </p>
+        <figure class="text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/en/7/71/Laika_%28Soviet_dog%29.jpg"
+                 alt="Laika in her space capsule"
+                 class="mx-auto border-4 border-tech-orange rounded-sm shadow-2xl max-w-md">
+            <figcaption class="text-metal-gray mt-4 uppercase tracking-wider text-sm">The famous photograph of Laika
+                before launch.
+            </figcaption>
+        </figure>
+    </section>
+
+    <section id="training" class="bg-space-blue border-l-4 border-tech-orange p-8 mb-10 shadow-lg">
+        <h2 class="text-3xl font-bold text-tech-orange uppercase tracking-wide mb-4 border-b-2 border-metal-gray pb-2">
+            Training and Selection</h2>
+        <p class="text-lg leading-8 mb-6">
+            Soviet scientists chose small, calm, and obedient stray dogs for early space missions.
+            Laika was one of three dogs considered, along with Albina and Mushka.
+        </p>
+        <ul class="list-none space-y-3 mb-6 pl-4">
+            <li class="before:content-['▸'] before:text-tech-orange before:font-bold before:mr-3">She was trained in
+                small spaces to adapt to the capsule.
+            </li>
+            <li class="before:content-['▸'] before:text-tech-orange before:font-bold before:mr-3">She wore a
+                custom-fitted harness and suit.
+            </li>
+            <li class="before:content-['▸'] before:text-tech-orange before:font-bold before:mr-3">Food was provided in
+                gelatin form.
+            </li>
+        </ul>
+        <p class="text-lg leading-8">
+            Few records remain of her exact training regimen, but it is known that she remained gentle throughout.
+        </p>
+    </section>
+
+    <section id="mission" class="bg-space-blue border-l-4 border-tech-orange p-8 mb-10 shadow-lg">
+        <h2 class="text-3xl font-bold text-tech-orange uppercase tracking-wide mb-6 border-b-2 border-metal-gray pb-2">
+            The Sputnik 2 Mission</h2>
+        <article class="mb-6 border-l-2 border-metal-gray pl-6">
+            <h3 class="text-2xl font-semibold text-tech-orange uppercase tracking-wide mb-3">Launch</h3>
+            <p class="text-lg leading-8">
+                On November 3, 1957, the Soviet Union launched Sputnik 2 from the Baikonur Cosmodrome.
+                The mission was designed to test life-support systems for potential human flights.
+            </p>
+        </article>
+        <article class="mb-6 border-l-2 border-metal-gray pl-6">
+            <h3 class="text-2xl font-semibold text-tech-orange uppercase tracking-wide mb-3">Conditions in Space</h3>
+            <p class="text-lg leading-8">
+                Sensors recorded Laika's heartbeat, breathing, and movement.
+                The cabin contained oxygen and temperature controls, but they soon failed.
+            </p>
+        </article>
+        <article class="border-l-2 border-metal-gray pl-6">
+            <h3 class="text-2xl font-semibold text-tech-orange uppercase tracking-wide mb-3">Outcome</h3>
+            <p class="text-lg leading-8">
+                Laika perished a few hours after launch due to overheating.
+                The spacecraft continued to orbit Earth for 162 days before burning up upon reentry.
+            </p>
+        </article>
+    </section>
+
+    <section id="legacy" class="bg-space-blue border-l-4 border-tech-orange p-8 mb-10 shadow-lg">
+        <h2 class="text-3xl font-bold text-tech-orange uppercase tracking-wide mb-4 border-b-2 border-metal-gray pb-2">
+            Legacy</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Posta_Romana_-_1959_-_Laika_120_B.jpg"
+             alt="laika stamp" class="mx-auto border-4 border-tech-orange rounded-sm shadow-2xl max-w-sm my-6"/>
+        <p class="text-lg leading-8 mb-6">
+            Laika's mission demonstrated that living creatures could survive launch and microgravity.
+            Though her death caused worldwide sadness, it advanced human spaceflight research.
+        </p>
+        <div class="bg-space-dark border-l-2 border-metal-gray p-4 mb-6">
+            <p class="text-lg leading-8">
+                In 2008, Russia built a small monument near Moscow in her honor, featuring Laika standing atop a rocket.
+            </p>
+        </div>
+        <blockquote title="Tribute"
+                    class="border-l-4 border-tech-orange bg-space-dark p-6 italic text-xl text-tech-cream">
+            "Laika's courage opened the path to the stars."
+        </blockquote>
+    </section>
+</main>
+
+<footer class="bg-space-blue border-t-4 border-tech-orange py-6 text-center">
+    <p class="text-metal-gray uppercase tracking-widest text-sm">DOM Quarry Example Project</p>
+</footer>
+
+</body>
+</html>
