@@ -16,8 +16,22 @@ Confused on a topic? Did I skim over a topic you want to dive deeper into? Below
 
 ## Lecture Notes
 
-- [L1 Getting Started](l1-getting-started/index.md)
-- [L2 Where is JS](./l2-where-js/index.md)
-- [L3 IO and Variables](./l3-io-and-var/index.md)
-- [L4 Conditional Statements](./l4-conditionals/index.md)
-- [Extra Demo Example](./demo/index.md)
+<ul>
+  {% assign unit = page.path | split: "/" | first %}
+  {% assign pages = site.pages | sort: "path" %}
+
+{% for lecture in pages %}
+{% assign parts = lecture.path | split: "/" %}
+{% assign first_letter = parts[1] | slice: 0, 1 %}
+
+    {% if parts.size == 3 and parts[0] == unit and first_letter == "l" and parts[2] == "index.md" and lecture.title %}
+      <li>
+        <a href="{{ lecture.url | relative_url }}">
+          {{ lecture.title | escape }}
+        </a>
+      </li>
+    {% endif %}
+
+{% endfor %}
+
+</ul>

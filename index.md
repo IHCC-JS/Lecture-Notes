@@ -1,12 +1,9 @@
-# Lecture Notes
+---
+---
 
 This website holds all in class examples and notes.
 You can download the entire website [on GitHub](https://github.com/IHCC-JS/Lecture-Notes).
 This course is split up into Learning Units (LU) and each Learning Unit has a number of lectures (L1, L2, L3, etc.).
-
-- [LU01 Intro](./lu01-intro/index.md)
-
-
 
 ## Docs
 
@@ -19,7 +16,7 @@ Consider these sources as your textbook.
 - [CheatSheet](https://htmlcheatsheet.com/js/JavaScript-JS-Cheat-Sheet.pdf)
 - [Intro to JavaScript JetBrains](https://academy.jetbrains.com/course/26697-introduction-to-javascript-programming)
 
-## Software
+## Software Guide
 
 As a web developer you don't need too much software.
 However, you need to have the following installed.
@@ -51,7 +48,7 @@ These tests will directly reflect on your grade.
 You need your own copy of the repo to work on the labs.
 To do this, click the "Fork" button in the top right corner of the repo page.
 
-![Fork button](../assets/fork-button.webp)
+![Fork button](docs/assets/fork-button.webp)
 
 ### Clone **YOUR** repo
 
@@ -85,7 +82,7 @@ Your grade will be based on whether the tests pass.
 Make sure you run the tests before submitting your project.
 Read more about Playwright [here](https://playwright.dev/).
 
-[//]: # "TODO how to install playwright on Windows"
+[//]: # 'TODO how to install playwright on Windows'
 
 To run the tests locally, you can use the following commands:
 
@@ -124,26 +121,28 @@ git push
 Please complete the following check list before turning in your lab.
 
 - [ ] Self grade your lab using the rubric in the labs `README.md`.
-- [ ] Record a video reflection on your lab([See here for details](video-reflection.md)).
+- [ ] Record a video reflection on your lab([See here for details](docs/video-reflection.md)).
 - [ ] Create a pull request from your fork to the original repo. (See below for details).
 - [ ] Submit the URL to your pull request and the video reflection in the assignment submission form.
       How to make a pull request:
 
-<details>
+<details markdown="1">
 <summary>How to Make a Pull Request</summary>
+
 To turn in your lab, create a pull request from your fork to the original repo.
 I will review your PR based on the tests passed and the rubric.
 **Turn in the URL to YOUR pull request.**
 
 > ⚠ If you don't turn in your pull request, I will not grade your lab.
 
-![Pull Request](../assets/pull-request.webp)
+![Pull Request](docs/assets/pull-request.webp)
 
 1. Should be my repo.
 2. Should be your forked repo.
 3. Click the "create pull request" button.
+ </details>
 
-## Coding Standard
+## Coding Standards
 
 In this class we will use [JavaScript Standard Style](https://standardjs.com/rules).
 This is already the default WebStorm for VS Code you can install an extension.

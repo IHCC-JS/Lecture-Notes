@@ -8,6 +8,10 @@ If you do fork this repository, make sure you keep your fork up to date.
 
 > This repository is always under construction. So make sure to keep your local copy up to date.
 
+## This repo lives as a Website!!
+
+You can view the lecture notes as a website at [https://ihcc-js.github.io/Lecture-Notes/](https://ihcc-js.github.io/Lecture-Notes/).
+
 ## How to Keep Up to Date
 
 In your terminal run this command to pull the latest changes from this repository.

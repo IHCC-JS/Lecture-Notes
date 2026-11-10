@@ -1,5 +1,5 @@
 ---
-title: `continue` and `break`
+title: continue and break
 ---
 
 # `continue` and `break`
@@ -7,13 +7,13 @@ title: `continue` and `break`
 What are `continue` and `break` and why are they useful?
 In JavaScript, `break` and `continue` help you control how loops run.
 
-* Loops normally run straight from start → end.
-* But real programs often need exceptions:
-    * Skip some iterations
-    * Stop early
-    * Avoid unnecessary work
-    * Improve performance
-    * Keep logic clean
+- Loops normally run straight from start → end.
+- But real programs often need exceptions:
+    - Skip some iterations
+    - Stop early
+    - Avoid unnecessary work
+    - Improve performance
+    - Keep logic clean
 
 Do the examples in this order:
 
@@ -23,4 +23,4 @@ Do the examples in this order:
 
 ## Demo
 
-Loop at the demo if you have time. 
+Loop at the demo if you have time.
