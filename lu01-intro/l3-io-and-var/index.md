@@ -1,3 +1,7 @@
+---
+title: I/O and Variables
+---
+
 # I/O and Variables
 
 ## I/O

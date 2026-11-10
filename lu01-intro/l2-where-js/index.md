@@ -1,3 +1,7 @@
+---
+title: Inline vs Internal vs External
+---
+
 # Inline vs Internal vs External
 
 Great Resources for this class:
