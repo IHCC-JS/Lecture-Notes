@@ -1,3 +1,7 @@
+---
+title: L1 - Getting Started
+---
+
 # Getting Started With JavaScript
 
 ## House Cleaning
@@ -46,18 +50,18 @@ I recommend [firefox](https://www.mozilla.org/en-US/firefox/new/) not necessaril
 - Open browser console
 - Write `console.log('Hello World!')`
 - Add words together.
-  ```js
-  console.log("Hello, World!");
-  console.log("Hello", "World", "!");
-  console.log("Welcome", "to", "CIS", 198, "JavaScript");
-  ```
+    ```js
+    console.log('Hello, World!');
+    console.log('Hello', 'World', '!');
+    console.log('Welcome', 'to', 'CIS', 198, 'JavaScript');
+    ```
 - All of these are valid
 
-  ```js
-  console.log("Hello, World!");
-  console.log("Hello, World!");
-  console.log(`Hello, World!`);
-  ```
+    ```js
+    console.log('Hello, World!');
+    console.log('Hello, World!');
+    console.log(`Hello, World!`);
+    ```
 
 ### Download [Node.JS](https://nodejs.org/en/download/current)
 
@@ -94,12 +98,13 @@ git --version
 
 ## First JS Exercise
 
-[//]: # (TODO make this exercise a bit more)
-[//]: # (Most students already had Git, Node.js, and VSCode installed)
-[//]: # (Don't step on L2's toes but make it a bit larger. Extra 5 minutes of content)
+[//]: # 'TODO make this exercise a bit more'
+[//]: # 'Most students already had Git, Node.js, and VSCode installed'
+[//]: # "Don't step on L2's toes but make it a bit larger. Extra 5 minutes of content"
 
 - Make HTML template using [Emmet](https://docs.emmet.io/cheat-sheet/)
 - Add `<h1>Getting Started With JavaScript</h1>`
 - Add an internal Script `<script>console.log("up and running");</script>`
 - Run exercise in a browser and check the console.
 
+[💾 Code from today's lecture](example.html)
