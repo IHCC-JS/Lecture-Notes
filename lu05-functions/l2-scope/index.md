@@ -1,3 +1,8 @@
+---
+title: L2 - Function Scope
+---
+
+
 # Function Scope
 
 ## Local vs Global Scope

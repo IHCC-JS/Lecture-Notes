@@ -1,5 +1,5 @@
 ---
-title: Intro to DOM
+title: L1 - Intro to DOM
 ---
 
 # Intro to DOM

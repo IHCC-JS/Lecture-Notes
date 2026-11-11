@@ -1,5 +1,5 @@
 ---
-title: Object Literals
+title: L1 - Object Literals
 ---
 
 # Object Literals

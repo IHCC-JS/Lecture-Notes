@@ -1,5 +1,5 @@
 ---
-title: Arrays
+title: L1 - Introduction to Arrays
 ---
 
 # Arrays

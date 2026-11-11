@@ -1,10 +1,10 @@
 ---
-title: L3 POST Building our own API
+title: L3 - POST Using our own API
 ---
 
-# L3 POST Building our own API
+# POST Using our own API
 
-Today we will front scatch build our own API and consume it. 
+Today we will front scatch build our own API and consume it.
 
 ## Backend
 
@@ -14,7 +14,7 @@ This API is built in [Express,](https://expressjs.com/) which is build on Node.j
 - [Video about Express](https://www.youtube.com/watch?v=-MTSQjw5DrM)
 
 First build a folder called backend.
-Then run the following. 
+Then run the following.
 
 ```bash
 npm init

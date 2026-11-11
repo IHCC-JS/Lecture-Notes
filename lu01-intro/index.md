@@ -2,7 +2,7 @@
 title: LU01 Intro
 ---
 
-# LU01 Intro
+# LU01 - Intro
 
 ## Learning Resources
 

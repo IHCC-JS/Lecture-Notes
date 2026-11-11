@@ -1,5 +1,5 @@
 ---
-title: Creating Elements in the DOM
+title: L3 - Creating Elements in the DOM
 ---
 
 # Creating DOM Elements

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retro Game Collector</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<h1>Retro Game Collector</h1>
+
+<section class="controls">
+    <form id="gameForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" placeholder="Game Title" required>
+        <br>
+        <label for="platform">Console:</label>
+        <input type="text" id="platform" placeholder="Console (e.g. NES)" required>
+        <br>
+        <label for="year">Year:</label>
+        <input type="number" id="year" placeholder="Year" style="width: 80px;">
+        <br>
+        <label><input type="checkbox" id="isComplete">Complete in Box?</label>
+        <br>
+        <button type="submit">Add to Collection</button>
+    </form>
+</section>
+
+<section class="controls">
+    <label for="platformFilter">Filter by Platform:</label>
+    <select id="platformFilter">
+        <option value="">All Platforms</option>
+    </select>
+</section>
+
+<div id="gameGrid" class="game-grid">
+    <!-- Filled By JS -->
+</div>
+</body>
+</html>

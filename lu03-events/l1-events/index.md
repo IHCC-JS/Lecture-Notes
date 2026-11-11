@@ -1,5 +1,5 @@
 ---
-title: Intro to Events
+title: L1 - Intro to Events
 ---
 
 # Intro to Events

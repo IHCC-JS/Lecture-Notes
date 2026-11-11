@@ -1,5 +1,5 @@
 ---
-title: I/O and Variables
+title: L3 - I/O and Variables
 ---
 
 # I/O and Variables
@@ -62,13 +62,11 @@ Numbers
 - [`Temporal`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal) new way.
     - I am currently updating the labs to use this new. Safari might not support it yet but Chrome and Firefox do.
 
-
 ## Run the Lab
 
 Clone down the [Project Template](https://github.com/IHCC-JS/Project-Template) and run it's tests.
 Explain to students why we are using Node.js in the labs.
 Instructions on how to run it are in the README.md file.
-
 
 ## Coding Standards
 

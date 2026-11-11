@@ -1,5 +1,5 @@
 ---
-title: Using Arrays and Looping
+title: L3 - Using Arrays and Looping
 ---
 
 # Using Arrays and Looping
@@ -16,5 +16,3 @@ title: Using Arrays and Looping
     - useful for filtering though an array.
         - Either to remove items from an array to build a new array based on a condition.
     - look at the [`filter.html`](filter.html) file.
-
-

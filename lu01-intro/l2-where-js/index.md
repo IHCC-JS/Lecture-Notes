@@ -1,5 +1,5 @@
 ---
-title: Inline vs Internal vs External
+title: L2 - Inline vs Internal vs External
 ---
 
 # Inline vs Internal vs External
@@ -9,8 +9,8 @@ Great Resources for this class:
 - W3 [this](https://www.w3schools.com/js/default.asp)
 - [Mozilla Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-
 Where to put JS?
+
 - https://www.w3schools.com/js/js_whereto.asp
 
 ## Inline
@@ -22,9 +22,9 @@ Where to put JS?
 - Make a page that uses a log in a internal script. see [`internalLog.html`](internalLog.html)
 - We can also use both [`both.html`](both.html)
 
-## Debugger In browser 
+## Debugger In browser
 
-## JS Syntax Intro 
+## JS Syntax Intro
 
 https://www.w3schools.com/js/js_syntax.asp
 
@@ -35,9 +35,8 @@ https://www.w3schools.com/js/js_syntax.asp
 - Make [`externalBefore.html`](externalBefore.html)
 - Now let's move the link to the body see [`externalAfter.html`](externalAfter.html)
 - Now make a new JS file just `console.log("hello, world")` link that in [`externalAfter.html`](externalAfter.html) as
-  well. 
+  well.
 
 ## Notes
 
 Go show students where to find this classes notes.
-

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wedding Guestbook</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+<h1>Wedding Guestbook</h1>
+
+<form id="guestForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Name" required><br><br>
+    <label for="message">Message: </label>
+    <textarea id="message" placeholder="Message"></textarea><br><br>
+    <label>
+        <input type="checkbox" id="plusOne"> Bringing a Plus One?
+    </label><br><br>
+    <input type="submit" value="Send RSVP">
+</form>
+
+<div id="guestList"></div>
+    <!--Filled by JS-->
+</body>
+</html>

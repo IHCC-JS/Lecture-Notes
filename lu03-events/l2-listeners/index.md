@@ -1,5 +1,5 @@
 ---
-title: L2 Event Listeners
+title: L2 - Event Listeners
 ---
 
 # L2 Event Listeners

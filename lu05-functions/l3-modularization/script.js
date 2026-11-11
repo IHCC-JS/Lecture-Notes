@@ -1,22 +1,9 @@
-import {updateDisplay, incrementCount, decrementCount} from "./logic.js";
+"use strict";
+import {calculateFine, attachCheckoutHandlers} from './bookFunctions.js';
 
-// app state
-let currentCount = 0;
+// Use querySelector for the fine form and attach submit listener
+const fineForm = document.querySelector('#fine-form');
+fineForm.addEventListener('submit', calculateFine);
 
-const countDisplay = document.getElementById("count");
-const incButton = document.getElementById("inc-btn");
-const decButton = document.getElementById("dec-btn");
-
-// initial count display
-updateDisplay(currentCount, countDisplay);
-
-// event listeners use function names imported from logic.js
-// note the use of arrow functions
-incButton.addEventListener("click", () => {
-    currentCount = incrementCount(currentCount, countDisplay)
-});
-
-decButton.addEventListener("click", () => {
-    currentCount = decrementCount(currentCount, countDisplay)
-});
-
+//Discussion questions: Does this need to be in a separate function?
+attachCheckoutHandlers();

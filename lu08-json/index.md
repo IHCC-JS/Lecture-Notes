@@ -2,7 +2,7 @@
 title: LU08 - JSON
 ---
 
-# LU06 - JSON
+# LU08 - JSON
 
 <!-- TODO add links to learning resources -->
 

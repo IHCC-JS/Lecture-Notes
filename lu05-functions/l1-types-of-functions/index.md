@@ -1,5 +1,5 @@
 ---
-title: Functions
+title: L1 - Types of Functions
 ---
 
 # Functions

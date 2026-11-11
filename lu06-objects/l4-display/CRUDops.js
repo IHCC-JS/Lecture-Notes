@@ -1,6 +1,6 @@
 export default function createNewItem(name, quantity, price, id) {
     return {
-       //TODO fill in the blanks
+        id: id, name: name, quantity: quantity, unitPrice: price
     };
 }
 

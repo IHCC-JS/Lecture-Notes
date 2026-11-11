@@ -1,8 +1,8 @@
 ---
-title: L4 Full Stack
+title: L4 - Full Stack
 ---
 
-# L4 Full Stack
+# Full Stack
 
 <!-- TODO Make a Game.js Class -->
 

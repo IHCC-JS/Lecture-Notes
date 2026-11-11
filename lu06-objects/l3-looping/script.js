@@ -1,3 +1,5 @@
+import displayProduct from "./displayProduct.js";
+
 //data
 const dealPercentage = [0.07, 0.10, 0.20, 0.30, 0, 0, 0, 0, 0, 0];
 const computerStore = {
@@ -21,6 +23,32 @@ const computerStore = {
         {}
     ]
 }
+
+const productsContainer =  document.querySelector("#products");
+const deal = document.querySelector("#deal");
+
+//display store name on the website
+document.querySelector("h1").textContent = computerStore.storeName;
+
+//Validate the products and services to remove empty ones, and >= 0 price
+computerStore.products.computers = computerStore.products.computers.filter(computer => computer.price > 0 && computer.price !== null);
+computerStore.products.phones = computerStore.products.phones.filter(phone => phone.price > 0 && phone.price !== null);
+computerStore.services = computerStore.services.filter(service => service.price != null);
+
+//Use function to convert an array of objects to an array of HTML elements
+const computers =  computerStore.products.computers.map(computer => displayProduct(computer));
+const phones =  computerStore.products.phones.map(phone => displayProduct(phone));
+
+//Append the new HTML elements to the screen
+computers.forEach(product => {productsContainer.append(product)});
+phones.forEach(product => {productsContainer.append(product)});
+
+//On Button click, allow the user to get a random discount code.
+//Do this if you have extra time.
+document.querySelector("#deal-of-the-day").addEventListener("click", () => {
+    let randomDeal = dealPercentage[Math.floor(Math.random() * dealPercentage.length)];
+    deal.textContent = (randomDeal * 100).toFixed(0) + "%";
+})
 
 //TODO Extra practice: Display all the services on the website
 
