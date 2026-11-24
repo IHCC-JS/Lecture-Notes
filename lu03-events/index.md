@@ -4,6 +4,8 @@ title: LU03 - Events
 
 # LU03 - Events
 
+Use event listeners to respond to mouse, keyboard, and form events, turning user input into interactive web experiences.
+
 ## Learning Resources
 
 - [Events W3Schools](https://www.w3schools.com/js/js_events.asp)

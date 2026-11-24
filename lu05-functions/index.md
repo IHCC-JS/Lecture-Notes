@@ -4,6 +4,8 @@ title: LU05 - Functions
 
 # LU05 - Functions
 
+Define and use functions to organize code, make it reusable, and create more maintainable web applications.
+
 ## Learning Resources
 
 <!-- TODO add links to learning resources -->

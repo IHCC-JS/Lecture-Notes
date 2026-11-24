@@ -11,7 +11,7 @@ Great Resources for this class:
 
 Where to put JS?
 
-- https://www.w3schools.com/js/js_whereto.asp
+- [W3 Schools JavaScript Where To](https://www.w3schools.com/js/js_whereto.asp)
 
 ## Inline
 
@@ -26,16 +26,12 @@ Where to put JS?
 
 ## JS Syntax Intro
 
-https://www.w3schools.com/js/js_syntax.asp
+[JavaScript Syntax](https://www.w3schools.com/js/js_syntax.asp)
 
 ### External
 
-- Now we will use External. External can be linked in the header or body, but we will do in the head most of the time in
-  this class.
-- Make [`externalBefore.html`](externalBefore.html)
-- Now let's move the link to the body see [`externalAfter.html`](externalAfter.html)
-- Now make a new JS file just `console.log("hello, world")` link that in [`externalAfter.html`](externalAfter.html) as
-  well.
+- Now we will use External. External can be linked in the header or body, but we will do in the head most of the time in this class.
+    - [`externalAfter.html`](externalAfter.html)
 
 ## Notes
 

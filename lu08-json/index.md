@@ -4,6 +4,10 @@ title: LU08 - JSON
 
 # LU08 - JSON
 
+Learn about JSON (JavaScript Object Notation) and how to use it to store and exchange data in web applications.
+
+## Learning Resources
+
 <!-- TODO add links to learning resources -->
 
 ## Lecture Notes

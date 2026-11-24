@@ -22,9 +22,7 @@ title: L3 - I/O and Variables
 - [`prompt()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt)
     - Allows web developers to display a message to the user and get a response.
 
-> Demo 1: Go look at an example of this [here](prompt.html)
-
-## Variables
+> Demo 1: Go look at an example of this [here](prompt.html). Or [here for the code](https://github.com/IHCC-JS/Lecture-Notes/blob/main/lu01-intro/l3-io-and-var/prompt.html).
 
 ## Data Types
 

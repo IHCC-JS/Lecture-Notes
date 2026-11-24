@@ -6,6 +6,8 @@ title: LU10 - API
 
 <!-- TODO add links to learning resources -->
 
+Use Application Programming Interfaces (APIs) to access data and functionality from other websites and services.
+
 ## Lecture Notes
 
 <ul>

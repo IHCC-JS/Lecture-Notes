@@ -1,8 +1,10 @@
 ---
-title: LU01 Intro
+title: LU01 - Intro
 ---
 
 # LU01 - Intro
+
+Explore JavaScript’s origins, add inline, internal, and external scripts to web pages, work with input/output, variables, data types, and dates, and use operators and conditionals to create dynamic web pages.
 
 ## Learning Resources
 

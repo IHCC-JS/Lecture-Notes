@@ -4,6 +4,10 @@ title: LU09 - OOP
 
 # LU09 - OOP
 
+Use JS Classes to create objects and implement object-oriented programming concepts.
+
+## Learning Resources
+
 <!-- TODO add links to learning resources -->
 
 ## Lecture Notes

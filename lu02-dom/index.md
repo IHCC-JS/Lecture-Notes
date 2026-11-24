@@ -4,6 +4,8 @@ title: LU02 DOM
 
 # LU02 DOM
 
+Use JavaScript to manipulate the HTML Document Object Model (DOM) to change the content and style of a web page.
+
 ## Learning Resources
 
 Confused on a topic? Did I skim over a topic you want to dive deeper into? Below is a list of videos and documents I recommend.

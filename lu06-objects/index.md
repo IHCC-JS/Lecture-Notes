@@ -4,6 +4,10 @@ title: LU06 - Objects
 
 # LU06 - Objects
 
+Using objects to organize related information then using these data structures to create content on a webpage.
+
+## Learning Resources
+
 <!-- TODO add links to learning resources -->
 
 ## Lecture Notes

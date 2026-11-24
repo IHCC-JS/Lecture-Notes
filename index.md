@@ -5,7 +5,7 @@ This website holds all in class examples and notes.
 You can download the entire website [on GitHub](https://github.com/IHCC-JS/Lecture-Notes).
 This course is split up into Learning Units (LU) and each Learning Unit has a number of lectures (L1, L2, L3, etc.).
 
-## Docs
+## [Docs](#docs)
 
 Being able to read documentation is a crucial skill for any developer.
 These two sources are crucial.
@@ -16,7 +16,7 @@ Consider these sources as your textbook.
 - [CheatSheet](https://htmlcheatsheet.com/js/JavaScript-JS-Cheat-Sheet.pdf)
 - [Intro to JavaScript JetBrains](https://academy.jetbrains.com/course/26697-introduction-to-javascript-programming)
 
-## Software Guide
+## [Software Guide](#software-guide)
 
 As a web developer you don't need too much software.
 However, you need to have the following installed.
@@ -31,12 +31,12 @@ However, you need to have the following installed.
         - Optional: [View Docx in VSCode](https://marketplace.visualstudio.com/items?itemName=ShahilKumar.docxreader)
     - Tip: Use auto save in your IDE. On the top left click, File > Auto Save. Make sure it is checked.
 - [Node.js](https://nodejs.org/en/)
-- Web Browser
+- A Web Browser
     - [FireFox](https://www.mozilla.org/en-US/firefox/) Why do I recommend Firefox?
       It's [FOSS](https://hg.mozilla.org/mozilla-central/) and [open](https://www.mozilla.org/en-US/about/manifesto/).
     - [Chrome](https://www.google.com/chrome/) It's used by everyone, so testing your website with it is important.
 
-## How to complete the Labs
+## [How to complete the Labs](#how-to-complete-the-labs)
 
 Each lab is a self-contained project that uses the concepts covered in the learning unit.
 While in this class we stick to vanilla JavaScript, the labs use Node.js so we can have a test suite.
@@ -100,7 +100,7 @@ npm run test:debug
 Tests are located in the `tests/` directory if you run into any issues.
 If the tests are not passing when you think they should be, please open an issue (or better yet, a pull request).
 
-## Keeping your project up to date
+## [Keeping your project up to date](#keeping-your-project-up-to-date)
 
 During development of your lab, you need to keep your remote repo up to date with the changes you made locally.
 To do this, run the following command in the project directory:
@@ -116,7 +116,7 @@ git commit -m "commit message"
 git push
 ```
 
-### Turning in your lab
+### [Turning in your lab](#turning-in-your-lab)
 
 Please complete the following check list before turning in your lab.
 
@@ -142,7 +142,7 @@ I will review your PR based on the tests passed and the rubric.
 3. Click the "create pull request" button.
  </details>
 
-## Coding Standards
+## [Coding Standards](#coding-standards)
 
 In this class we will use [JavaScript Standard Style](https://standardjs.com/rules).
 This is already the default WebStorm for VS Code you can install an extension.
@@ -202,7 +202,7 @@ Use [JSDocs](https://jsdoc.app/) to document your code.
 function Book(title, author) {}
 ```
 
-## Contribute to the Class
+## [Contribute to the Class](#contribute-to-the-class)
 
 See something wrong or could use improvement?
 Open an issue or a pull request.

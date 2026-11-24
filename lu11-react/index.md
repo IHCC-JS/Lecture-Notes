@@ -4,6 +4,10 @@ title: LU11 - React
 
 # LU11 - React
 
+Peak into the world of JS frameworks and learn how to build a simple React application.
+
+## Learning Resources
+
 <!-- TODO add links to learning resources -->
 
 ## Lecture Notes

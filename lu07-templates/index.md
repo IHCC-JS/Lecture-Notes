@@ -4,7 +4,10 @@ title: LU07 - Templates
 
 # LU07 - Templates
 
+Use string literals and `<template>` elements to create reusable HTML, then fill it with data from JavaScript objects.
+
 <!-- TODO add links to learning resources -->
+<!-- TODO add <template> examples -->
 
 ## Lecture Notes
 

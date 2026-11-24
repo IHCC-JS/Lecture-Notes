@@ -4,6 +4,8 @@ title: LU04 - Arrays and Looping
 
 # LU04 - Arrays and Looping
 
+Work with arrays to store and manipulate collections of data, and use loops to iterate through arrays to perform repetitive tasks.
+
 ## Learning Resources
 
 - [Array W3Schools](https://www.w3schools.com/js/js_arrays.asp)
@@ -12,7 +14,6 @@ title: LU04 - Arrays and Looping
 - [Looping MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
 - [Code Bro Arrays Video](https://www.youtube.com/watch?v=yQ1fz8LY354)
 - [Code Bro Looping Video](https://www.youtube.com/watch?v=ZOQYIWLngSU)
-
 
 ## Lecture Notes
 
